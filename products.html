@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
@@ -9,12 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
       /* Existing styles */
       .dropdown:hover .dropdown-menu {
@@ -85,9 +83,15 @@
         animation: pulse 2s infinite;
       }
       @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-        100% { transform: scale(1); }
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
       .mobile-menu {
         transition: all 0.3s ease;
@@ -122,66 +126,67 @@
       .scroll-top:hover {
         background: #b91c1c;
       }
-      
+
       /* New responsive styles */
       @media (max-width: 640px) {
         .hero-section h1 {
           font-size: 2rem;
           line-height: 1.2;
         }
-        
+
         .hero-section p {
           font-size: 1rem;
         }
-        
+
         .price-table {
           font-size: 0.875rem;
         }
-        
-        .price-table th, .price-table td {
+
+        .price-table th,
+        .price-table td {
           padding: 8px;
         }
-        
+
         .feature-icon {
           width: 3rem;
           height: 3rem;
         }
-        
+
         .feature-icon i {
           font-size: 1.25rem;
         }
-        
+
         .testimonial-card {
           padding: 1rem;
         }
-        
+
         .certification-badge {
           padding: 1rem;
         }
-        
+
         .certification-badge .w-20 {
           width: 3rem;
           height: 3rem;
         }
-        
+
         .certification-badge i {
           font-size: 1.25rem;
         }
-        
+
         .certification-badge h3 {
           font-size: 1rem;
         }
-        
+
         .certification-badge p {
           font-size: 0.75rem;
         }
-        
+
         .sticky-cta {
           max-width: 80%;
           right: 10%;
           left: 10%;
         }
-        
+
         .scroll-top {
           width: 40px;
           height: 40px;
@@ -189,1365 +194,1449 @@
           right: 10px;
         }
       }
-      
+
       @media (min-width: 641px) and (max-width: 1024px) {
         .hero-section h1 {
           font-size: 2.5rem;
         }
-        
+
         .hero-section p {
           font-size: 1.125rem;
         }
-        
+
         .feature-icon {
           width: 4rem;
           height: 4rem;
         }
-        
+
         .feature-icon i {
           font-size: 1.5rem;
         }
-        
+
         .testimonial-card {
           padding: 1.5rem;
         }
       }
     </style>
-</head>
-<body class="bg-gray-50">
+  </head>
+  <body class="bg-gray-50">
     <!-- Top Bar -->
     <div class="bg-red-600 text-white py-2 text-sm">
-        <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-1 sm:space-y-0">
-            <div class="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 space-y-1 sm:space-y-0">
-                <span class="text-center sm:text-left"><i class="fas fa-phone mr-2"></i>Customer Care: 080 45 77 1313</span>
-                <span class="text-center sm:text-left"><i class="fab fa-whatsapp mr-2"></i>WhatsApp: 9711773333</span>
-            </div>
-            <div class="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 space-y-1 sm:space-y-0">
-                <span class="text-center sm:text-left"><i class="fas fa-calendar-alt mr-2"></i>Price List: 24 June 2025</span>
-                <a href="mailto:sales@apmcables.com" class="hover:underline text-center sm:text-left">
-                    <i class="fas fa-envelope mr-2"></i>sales@apmcables.com
-                </a>
-            </div>
+      <div
+        class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-1 sm:space-y-0">
+        <div
+          class="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 space-y-1 sm:space-y-0">
+          <span class="text-center sm:text-left"
+            ><i class="fas fa-phone mr-2"></i>Customer Care: 080 45 77
+            1313</span
+          >
+          <span class="text-center sm:text-left"
+            ><i class="fab fa-whatsapp mr-2"></i>WhatsApp: 9711773333</span
+          >
         </div>
+        <div
+          class="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 space-y-1 sm:space-y-0">
+          <span class="text-center sm:text-left"
+            ><i class="fas fa-calendar-alt mr-2"></i>Price List: 24 June
+            2025</span
+          >
+          <a
+            href="mailto:sales@apmcables.com"
+            class="hover:underline text-center sm:text-left">
+            <i class="fas fa-envelope mr-2"></i>sales@apmcables.com
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- Main Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between py-4">
-                <!-- Logo & Brand -->
-                <div class="flex items-center space-x-4">
-                    <div class="text-2xl font-bold">
-                        <a href="index.html">
-                            <img
-                                src="./assets/img/apm-cables-logo-removebg-preview.png"
-                                alt="APM Cables"
-                                class="w-16 sm:w-20"
-                            />
-                        </a>
-                    </div>
-                    <div class="hidden md:block border-l border-gray-300 pl-4">
-                        <div class="text-lg font-semibold tagline">
-                            Save Power. Live Smart.
-                        </div>
-                        <div class="text-sm text-gray-600">
-                            99.97% Pure Copper • Flame Retardant
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button
-                    id="mobile-menu-btn"
-                    class="lg:hidden text-gray-700 focus:outline-none"
-                >
-                    <i id="menu-icon" class="fas fa-bars text-2xl"></i>
-                </button>
-
-                <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center space-x-4 sm:space-x-6">
-                    <a
-                        href="index.html"
-                        class="text-gray-700 hover:text-red-600 font-medium transition-colors text-sm sm:text-base"
-                        >Home</a
-                    >
-                    <a href="about.html" class="text-red-600 font-medium text-sm sm:text-base">About Us</a>
-                    <div class="relative dropdown">
-                        <a
-                            href="#products"
-                            class="text-gray-700 hover:text-red-600 font-medium transition-colors flex items-center text-sm sm:text-base"
-                        >
-                            Products <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                        </a>
-                        <div
-                            class="dropdown-menu absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg py-2 hidden z-50"
-                        >
-                            <a
-                                href="#pvc-wires"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
-                                >PVC Wires</a
-                            >
-                            <a
-                                href="#project-wires"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
-                                >Project Wires</a
-                            >
-                            <a
-                                href="#multicore"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
-                                >Multicore Cables</a
-                            >
-                            <a
-                                href="#special"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
-                                >Special Cables</a
-                            >
-                            <a
-                                href="#shielded"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
-                                >Shielded Cables</a
-                            >
-                        </div>
-                    </div>
-                    <a href="#contact" class="text-gray-700 hover:text-red-600 font-medium transition-colors text-sm sm:text-base">Contact Us</a>
-                </div>
-
-                <!-- Contact Button -->
-                <div class="hidden lg:block">
-                    <a
-                        href="#contact"
-                        class="bg-red-600 text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium text-sm sm:text-base"
-                    >
-                        <i class="fas fa-file-invoice-dollar mr-2"></i>Get Quote
-                    </a>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <!-- Logo & Brand -->
+          <div class="flex items-center space-x-4">
+            <div class="text-2xl font-bold">
+              <a href="index.html">
+                <img
+                  src="./assets/img/apm-cables-logo-removebg-preview.png"
+                  alt="APM Cables"
+                  class="w-16 sm:w-20" />
+              </a>
             </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div
-            id="mobile-menu"
-            class="mobile-menu lg:hidden bg-white shadow-lg py-4 px-6 hidden"
-        >
-            <div class="space-y-3">
-                <a
-                    href="index.html"
-                    class="block text-gray-700 hover:text-red-600 font-medium text-base"
-                    >Home</a
-                >
-                <a href="about.html" class="block text-red-600 font-medium text-base"
-                    >About Us</a
-                >
-                <a
-                    href="#pvc-wires"
-                    class="block text-gray-700 hover:text-red-600 font-medium text-base"
-                    >PVC Wires</a
-                >
-                <a
-                    href="#project-wires"
-                    class="block text-gray-700 hover:text-red-600 font-medium text-base"
-                    >Project Wires</a
-                >
-                <a
-                    href="#multicore"
-                    class="block text-gray-700 hover:text-red-600 font-medium text-base"
-                    >Multicore Cables</a
-                >
-                <a
-                    href="#special"
-                    class="block text-gray-700 hover:text-red-600 font-medium text-base"
-                    >Special Cables</a
-                >
-                <a
-                    href="#shielded"
-                    class="block text-gray-700 hover:text-red-600 font-medium text-base"
-                    >Shielded Cables</a
-                >
-                <a
-                    href="#contact"
-                    class="block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium text-center text-base"
-                >
-                    <i class="fas fa-file-invoice-dollar mr-2"></i>Get Quote
-                </a>
+            <div class="hidden md:block border-l border-gray-300 pl-4">
+              <div class="text-lg font-semibold tagline">
+                Save Power. Live Smart.
+              </div>
+              <div class="text-sm text-gray-600">
+                99.97% Pure Copper • Flame Retardant
+              </div>
             </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="lg:hidden text-gray-700 focus:outline-none">
+            <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+          </button>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center space-x-4 sm:space-x-6">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-red-600 font-medium transition-colors text-sm sm:text-base"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 hover:text-red-600 font-medium transition-colors flex items-center text-sm sm:text-base"
+              >About Us</a
+            >
+            <div class="relative dropdown">
+              <a
+                href="products.html"
+                class="text-red-600 font-medium text-sm sm:text-base">
+                Products <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </a>
+              <div
+                class="dropdown-menu absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg py-2 hidden z-50">
+                <a
+                  href="products.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
+                  >PVC Wires</a
+                >
+                <a
+                  href="products.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
+                  >Project Wires</a
+                >
+                <a
+                  href="products.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
+                  >Multicore Cables</a
+                >
+                <a
+                  href="products.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
+                  >Special Cables</a
+                >
+                <a
+                  href="products.html"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600 text-sm"
+                  >Shielded Cables</a
+                >
+              </div>
+            </div>
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-red-600 font-medium transition-colors text-sm sm:text-base"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Contact Button -->
+          <div class="hidden lg:block">
+            <a
+              href="#contact"
+              class="bg-red-600 text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium text-sm sm:text-base">
+              <i class="fas fa-file-invoice-dollar mr-2"></i>Get Quote
+            </a>
+          </div>
         </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu lg:hidden bg-white shadow-lg py-4 px-6 hidden">
+        <div class="space-y-3">
+          <a
+            href="index.html"
+            class="block text-gray-700 hover:text-red-600 font-medium text-base"
+            >Home</a
+          >
+          <a href="about.html" class="block text-red-600 font-medium text-base"
+            >About Us</a
+          >
+          <a
+            href="#pvc-wires"
+            class="block text-gray-700 hover:text-red-600 font-medium text-base"
+            >PVC Wires</a
+          >
+          <a
+            href="#project-wires"
+            class="block text-gray-700 hover:text-red-600 font-medium text-base"
+            >Project Wires</a
+          >
+          <a
+            href="#multicore"
+            class="block text-gray-700 hover:text-red-600 font-medium text-base"
+            >Multicore Cables</a
+          >
+          <a
+            href="#special"
+            class="block text-gray-700 hover:text-red-600 font-medium text-base"
+            >Special Cables</a
+          >
+          <a
+            href="#shielded"
+            class="block text-gray-700 hover:text-red-600 font-medium text-base"
+            >Shielded Cables</a
+          >
+          <a
+            href="#contact"
+            class="block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium text-center text-base">
+            <i class="fas fa-file-invoice-dollar mr-2"></i>Get Quote
+          </a>
+        </div>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section
-        class="bg-gradient-to-r from-red-700 to-red-900 text-white py-12 sm:py-16 md:py-24 relative overflow-hidden hero-pattern hero-section"
-    >
-        <div class="absolute inset-0 opacity-10">
-            <div
-                class="absolute inset-0"
-                style="
-                    background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Cpath d=%22M20 20 L80 80 M80 20 L20 80%22 stroke=%22white%22 stroke-width=%222%22/%3E%3C/svg%3E');
-                "
-            ></div>
+      class="bg-gradient-to-r from-red-700 to-red-900 text-white py-12 sm:py-16 md:py-24 relative overflow-hidden hero-pattern hero-section">
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute inset-0"
+          style="
+            background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 100 100%22%3E%3Cpath d=%22M20 20 L80 80 M80 20 L20 80%22 stroke=%22white%22 stroke-width=%222%22/%3E%3C/svg%3E');
+          "></div>
+      </div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeIn">
+            Premium Electrical Wires & Cables
+          </h1>
+          <p
+            class="text-lg sm:text-xl mb-6 opacity-90 animate__animated animate__fadeIn animate__delay-1s">
+            Manufactured with 99.97% Pure Copper • Flame Retardant (FR) • IS 694
+            Certified
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-3 sm:gap-4 animate__animated animate__fadeIn animate__delay-2s">
+            <a
+              href="#products"
+              class="bg-white text-red-600 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+              View Products <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <a
+              href="#pricing"
+              class="border-2 border-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-colors text-center">
+              Download Price List
+            </a>
+          </div>
         </div>
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="max-w-3xl">
-                <h1
-                    class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeIn"
-                >
-                    Premium Electrical Wires & Cables
-                </h1>
-                <p
-                    class="text-lg sm:text-xl mb-6 opacity-90 animate__animated animate__fadeIn animate__delay-1s"
-                >
-                    Manufactured with 99.97% Pure Copper • Flame Retardant (FR) • IS 694
-                    Certified
-                </p>
-                <div
-                    class="flex flex-col sm:flex-row gap-3 sm:gap-4 animate__animated animate__fadeIn animate__delay-2s"
-                >
-                    <a
-                        href="#products"
-                        class="bg-white text-red-600 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center"
-                    >
-                        View Products <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                    <a
-                        href="#pricing"
-                        class="border-2 border-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-colors text-center"
-                    >
-                        Download Price List
-                    </a>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Features Section -->
     <section class="py-12 sm:py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8 sm:mb-12">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    Why Choose APM Cables?
-                </h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">
-                    We deliver excellence through innovation, quality, and reliability
-                </p>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
-                <div class="text-center">
-                    <div
-                        class="feature-icon mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-4"
-                    >
-                        <i class="fas fa-bolt text-red-600 text-xl sm:text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-2">99.97% Pure Copper</h3>
-                    <p class="text-gray-600 text-sm sm:text-base">
-                        Superior conductivity for efficient power transmission
-                    </p>
-                </div>
-
-                <div class="text-center">
-                    <div
-                        class="feature-icon mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-4"
-                    >
-                        <i class="fas fa-fire-alt text-red-600 text-xl sm:text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-2">Flame Retardant</h3>
-                    <p class="text-gray-600 text-sm sm:text-base">
-                        Enhanced safety with fire-resistant properties
-                    </p>
-                </div>
-
-                <div class="text-center">
-                    <div
-                        class="feature-icon mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-4"
-                    >
-                        <i class="fas fa-certificate text-red-600 text-xl sm:text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-2">IS 694 Certified</h3>
-                    <p class="text-gray-600 text-sm sm:text-base">
-                        Meets stringent Indian quality standards
-                    </p>
-                </div>
-
-                <div class="text-center">
-                    <div
-                        class="feature-icon mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-4"
-                    >
-                        <i class="fas fa-shield-alt text-red-600 text-xl sm:text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-2">Long Lasting</h3>
-                    <p class="text-gray-600 text-sm sm:text-base">
-                        Durable construction for extended service life
-                    </p>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Why Choose APM Cables?
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            We deliver excellence through innovation, quality, and reliability
+          </p>
         </div>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
+          <div class="text-center">
+            <div
+              class="feature-icon mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-bolt text-red-600 text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold mb-2">
+              99.97% Pure Copper
+            </h3>
+            <p class="text-gray-600 text-sm sm:text-base">
+              Superior conductivity for efficient power transmission
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="feature-icon mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-fire-alt text-red-600 text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold mb-2">Flame Retardant</h3>
+            <p class="text-gray-600 text-sm sm:text-base">
+              Enhanced safety with fire-resistant properties
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="feature-icon mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <i
+                class="fas fa-certificate text-red-600 text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold mb-2">IS 694 Certified</h3>
+            <p class="text-gray-600 text-sm sm:text-base">
+              Meets stringent Indian quality standards
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="feature-icon mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-shield-alt text-red-600 text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold mb-2">Long Lasting</h3>
+            <p class="text-gray-600 text-sm sm:text-base">
+              Durable construction for extended service life
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- PVC Wires Section -->
     <section id="pvc-wires" class="cable-section py-12 sm:py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8 sm:mb-12">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    PVC Insulated Wires & Cables
-                </h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">
-                    Single Core PVC Insulated Wires (IS 694 | 1100 Volts) available in
-                    90m & 180m box packaging
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-                <!-- 90 Meter Box -->
-                <div
-                    class="bg-white rounded-xl shadow-lg overflow-hidden product-card"
-                >
-                    <div class="bg-red-600 text-white p-4 sm:p-6">
-                        <h3 class="text-xl sm:text-2xl font-bold flex items-center">
-                            <i class="fas fa-box mr-3"></i> 90 Meter Box Packaging
-                        </h3>
-                        <p class="opacity-90 mt-2 text-sm sm:text-base">List Price effective 24 June 2025</p>
-                    </div>
-                    <div class="p-4 sm:p-6">
-                        <div class="price-table overflow-x-auto">
-                            <table class="w-full">
-                                <thead>
-                                    <tr>
-                                        <th>Conductor Area (sq.mm.)</th>
-                                        <th>List Price (₹)</th>
-                                        <th>Coils per Carton</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>0.75</td>
-                                        <td>1,440</td>
-                                        <td>28</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1.0</td>
-                                        <td>1,880</td>
-                                        <td>24</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1.5</td>
-                                        <td>2,765</td>
-                                        <td>16</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2.5</td>
-                                        <td>4,410</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4.0</td>
-                                        <td>6,595</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6.0</td>
-                                        <td>10,130</td>
-                                        <td>6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>18,130</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>16</td>
-                                        <td>28,615</td>
-                                        <td>1</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="mt-4 sm:mt-6 p-4 specs-box rounded-lg">
-                            <h4 class="font-bold text-gray-800 mb-2 text-base sm:text-lg">Specifications:</h4>
-                            <ul class="text-gray-600 space-y-1 text-sm sm:text-base">
-                                <li>
-                                    <i class="fas fa-check text-green-500 mr-2"></i> Voltage:
-                                    1100 Volts
-                                </li>
-                                <li>
-                                    <i class="fas fa-check text-green-500 mr-2"></i> Standard:
-                                    IS 694
-                                </li>
-                                <li>
-                                    <i class="fas fa-check text-green-500 mr-2"></i> Conductor:
-                                    99.97% Pure Copper
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 180 Meter Coil -->
-                <div
-                    class="bg-white rounded-xl shadow-lg overflow-hidden product-card"
-                >
-                    <div class="bg-red-700 text-white p-4 sm:p-6">
-                        <h3 class="text-xl sm:text-2xl font-bold flex items-center">
-                            <i class="fas fa-coins mr-3"></i> 180 Meter Coil
-                        </h3>
-                        <p class="opacity-90 mt-2 text-sm sm:text-base">List Price effective 24 June 2025</p>
-                    </div>
-                    <div class="p-4 sm:p-6">
-                        <div class="price-table overflow-x-auto">
-                            <table class="w-full">
-                                <thead>
-                                    <tr>
-                                        <th>Conductor Area (sq.mm.)</th>
-                                        <th>List Price (₹)</th>
-                                        <th>Coils per Carton</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>0.75</td>
-                                        <td>2,515</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1.0</td>
-                                        <td>3,270</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1.5</td>
-                                        <td>4,775</td>
-                                        <td>6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2.5</td>
-                                        <td>7,755</td>
-                                        <td>4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4.0</td>
-                                        <td>12,035</td>
-                                        <td>4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6.0</td>
-                                        <td>18,085</td>
-                                        <td>4</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="mt-4 sm:mt-6 grid grid-cols-2 gap-4">
-                            <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
-                                <div class="text-red-600 text-xl sm:text-2xl font-bold mb-1">99.97%</div>
-                                <div class="text-xs sm:text-sm text-gray-600">Pure Copper</div>
-                            </div>
-                            <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
-                                <div class="text-red-600 text-xl sm:text-2xl font-bold mb-1">1100V</div>
-                                <div class="text-xs sm:text-sm text-gray-600">Voltage Rating</div>
-                            </div>
-                            <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
-                                <div class="text-red-600 text-xl sm:text-2xl font-bold mb-1">FR</div>
-                                <div class="text-xs sm:text-sm text-gray-600">Flame Retardant</div>
-                            </div>
-                            <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
-                                <div class="text-red-600 text-xl sm:text-2xl font-bold mb-1">IS 694</div>
-                                <div class="text-xs sm:text-sm text-gray-600">Certified</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            PVC Insulated Wires & Cables
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Single Core PVC Insulated Wires (IS 694 | 1100 Volts) available in
+            90m & 180m box packaging
+          </p>
         </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+          <!-- 90 Meter Box -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
+            <div class="bg-red-600 text-white p-4 sm:p-6">
+              <h3 class="text-xl sm:text-2xl font-bold flex items-center">
+                <i class="fas fa-box mr-3"></i> 90 Meter Box Packaging
+              </h3>
+              <p class="opacity-90 mt-2 text-sm sm:text-base">
+                List Price effective 24 June 2025
+              </p>
+            </div>
+            <div class="p-4 sm:p-6">
+              <div class="price-table overflow-x-auto">
+                <table class="w-full">
+                  <thead>
+                    <tr>
+                      <th>Conductor Area (sq.mm.)</th>
+                      <th>List Price (₹)</th>
+                      <th>Coils per Carton</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0.75</td>
+                      <td>1,440</td>
+                      <td>28</td>
+                    </tr>
+                    <tr>
+                      <td>1.0</td>
+                      <td>1,880</td>
+                      <td>24</td>
+                    </tr>
+                    <tr>
+                      <td>1.5</td>
+                      <td>2,765</td>
+                      <td>16</td>
+                    </tr>
+                    <tr>
+                      <td>2.5</td>
+                      <td>4,410</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>4.0</td>
+                      <td>6,595</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>6.0</td>
+                      <td>10,130</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>18,130</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>28,615</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-4 sm:mt-6 p-4 specs-box rounded-lg">
+                <h4 class="font-bold text-gray-800 mb-2 text-base sm:text-lg">
+                  Specifications:
+                </h4>
+                <ul class="text-gray-600 space-y-1 text-sm sm:text-base">
+                  <li>
+                    <i class="fas fa-check text-green-500 mr-2"></i> Voltage:
+                    1100 Volts
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-green-500 mr-2"></i> Standard:
+                    IS 694
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-green-500 mr-2"></i> Conductor:
+                    99.97% Pure Copper
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 180 Meter Coil -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
+            <div class="bg-red-700 text-white p-4 sm:p-6">
+              <h3 class="text-xl sm:text-2xl font-bold flex items-center">
+                <i class="fas fa-coins mr-3"></i> 180 Meter Coil
+              </h3>
+              <p class="opacity-90 mt-2 text-sm sm:text-base">
+                List Price effective 24 June 2025
+              </p>
+            </div>
+            <div class="p-4 sm:p-6">
+              <div class="price-table overflow-x-auto">
+                <table class="w-full">
+                  <thead>
+                    <tr>
+                      <th>Conductor Area (sq.mm.)</th>
+                      <th>List Price (₹)</th>
+                      <th>Coils per Carton</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0.75</td>
+                      <td>2,515</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>1.0</td>
+                      <td>3,270</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>1.5</td>
+                      <td>4,775</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>2.5</td>
+                      <td>7,755</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>4.0</td>
+                      <td>12,035</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>6.0</td>
+                      <td>18,085</td>
+                      <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-4 sm:mt-6 grid grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                  <div class="text-red-600 text-xl sm:text-2xl font-bold mb-1">
+                    99.97%
+                  </div>
+                  <div class="text-xs sm:text-sm text-gray-600">
+                    Pure Copper
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                  <div class="text-red-600 text-xl sm:text-2xl font-bold mb-1">
+                    1100V
+                  </div>
+                  <div class="text-xs sm:text-sm text-gray-600">
+                    Voltage Rating
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                  <div class="text-red-600 text-xl sm:text-2xl font-bold mb-1">
+                    FR
+                  </div>
+                  <div class="text-xs sm:text-sm text-gray-600">
+                    Flame Retardant
+                  </div>
+                </div>
+                <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                  <div class="text-red-600 text-xl sm:text-2xl font-bold mb-1">
+                    IS 694
+                  </div>
+                  <div class="text-xs sm:text-sm text-gray-600">Certified</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Project Wires Section -->
     <section id="project-wires" class="py-12 sm:py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8 sm:mb-12">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    Project Wires (200-300m)
-                </h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">
-                    APM Single Core FR & FRLS PVC Flexible Cables for industrial and
-                    commercial projects
-                </p>
-            </div>
-
-            <div class="overflow-x-auto">
-                <table class="price-table w-full">
-                    <thead>
-                        <tr>
-                            <th>Size (sq.mm.)</th>
-                            <th>Available Length</th>
-                            <th>FRLF Price (₹)</th>
-                            <th>FRLS-H Price (₹)</th>
-                            <th class="text-center">Application</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="font-bold">0.75</td>
-                            <td>300 meters</td>
-                            <td>6,130</td>
-                            <td>6,320</td>
-                            <td class="text-center">
-                                <span
-                                    class="bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs sm:text-sm"
-                                    >Lighting</span
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold">1.0</td>
-                            <td>300 meters</td>
-                            <td>8,040</td>
-                            <td>8,275</td>
-                            <td class="text-center">
-                                <span
-                                    class="bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs sm:text-sm"
-                                    >General Purpose</span
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold">1.5</td>
-                            <td>300 meters</td>
-                            <td>11,840</td>
-                            <td>12,195</td>
-                            <td class="text-center">
-                                <span
-                                    class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs sm:text-sm"
-                                    >Power Sockets</span
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold">2.5</td>
-                            <td>300 meters</td>
-                            <td>19,210</td>
-                            <td>19,800</td>
-                            <td class="text-center">
-                                <span
-                                    class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs sm:text-sm"
-                                    >AC Units</span
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold">4.0</td>
-                            <td>200 meters</td>
-                            <td>19,785</td>
-                            <td>20,385</td>
-                            <td class="text-center">
-                                <span
-                                    class="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs sm:text-sm"
-                                    >Heavy Duty</span
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold">6.0</td>
-                            <td>200 meters</td>
-                            <td>29,600</td>
-                            <td>30,495</td>
-                            <td class="text-center">
-                                <span
-                                    class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs sm:text-sm"
-                                    >Industrial</span
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold">10</td>
-                            <td>200 meters</td>
-                            <td>51,885</td>
-                            <td>53,405</td>
-                            <td class="text-center">
-                                <span
-                                    class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full text-xs sm:text-sm"
-                                    >Main Supply</span
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="font-bold">16</td>
-                            <td>200 meters</td>
-                            <td>82,260</td>
-                            <td>84,680</td>
-                            <td class="text-center">
-                                <span
-                                    class="bg-pink-100 text-pink-700 px-2 py-1 rounded-full text-xs sm:text-sm"
-                                    >Commercial</span
-                                >
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-                <div class="bg-gray-50 p-4 sm:p-6 rounded-xl">
-                    <h4 class="font-bold text-lg mb-3 text-red-600">FRLF Cables</h4>
-                    <p class="text-gray-600 text-sm sm:text-base">
-                        Flame Retardant Low Smoke cables for enhanced safety in
-                        residential buildings
-                    </p>
-                </div>
-                <div class="bg-gray-50 p-4 sm:p-6 rounded-xl">
-                    <h4 class="font-bold text-lg mb-3 text-red-600">FRLS-H Cables</h4>
-                    <p class="text-gray-600 text-sm sm:text-base">
-                        Flame Retardant Low Smoke Halogen Free cables for critical
-                        applications
-                    </p>
-                </div>
-                <div class="bg-gray-50 p-4 sm:p-6 rounded-xl">
-                    <h4 class="font-bold text-lg mb-3 text-red-600">
-                        300m & 200m Packs
-                    </h4>
-                    <p class="text-gray-600 text-sm sm:text-base">
-                        Optimized packaging for project requirements with minimal wastage
-                    </p>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Project Wires (200-300m)
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            APM Single Core FR & FRLS PVC Flexible Cables for industrial and
+            commercial projects
+          </p>
         </div>
+
+        <div class="overflow-x-auto">
+          <table class="price-table w-full">
+            <thead>
+              <tr>
+                <th>Size (sq.mm.)</th>
+                <th>Available Length</th>
+                <th>FRLF Price (₹)</th>
+                <th>FRLS-H Price (₹)</th>
+                <th class="text-center">Application</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-bold">0.75</td>
+                <td>300 meters</td>
+                <td>6,130</td>
+                <td>6,320</td>
+                <td class="text-center">
+                  <span
+                    class="bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs sm:text-sm"
+                    >Lighting</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="font-bold">1.0</td>
+                <td>300 meters</td>
+                <td>8,040</td>
+                <td>8,275</td>
+                <td class="text-center">
+                  <span
+                    class="bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs sm:text-sm"
+                    >General Purpose</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="font-bold">1.5</td>
+                <td>300 meters</td>
+                <td>11,840</td>
+                <td>12,195</td>
+                <td class="text-center">
+                  <span
+                    class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs sm:text-sm"
+                    >Power Sockets</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="font-bold">2.5</td>
+                <td>300 meters</td>
+                <td>19,210</td>
+                <td>19,800</td>
+                <td class="text-center">
+                  <span
+                    class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs sm:text-sm"
+                    >AC Units</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="font-bold">4.0</td>
+                <td>200 meters</td>
+                <td>19,785</td>
+                <td>20,385</td>
+                <td class="text-center">
+                  <span
+                    class="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs sm:text-sm"
+                    >Heavy Duty</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="font-bold">6.0</td>
+                <td>200 meters</td>
+                <td>29,600</td>
+                <td>30,495</td>
+                <td class="text-center">
+                  <span
+                    class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs sm:text-sm"
+                    >Industrial</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="font-bold">10</td>
+                <td>200 meters</td>
+                <td>51,885</td>
+                <td>53,405</td>
+                <td class="text-center">
+                  <span
+                    class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full text-xs sm:text-sm"
+                    >Main Supply</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="font-bold">16</td>
+                <td>200 meters</td>
+                <td>82,260</td>
+                <td>84,680</td>
+                <td class="text-center">
+                  <span
+                    class="bg-pink-100 text-pink-700 px-2 py-1 rounded-full text-xs sm:text-sm"
+                    >Commercial</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          class="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+          <div class="bg-gray-50 p-4 sm:p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-3 text-red-600">FRLF Cables</h4>
+            <p class="text-gray-600 text-sm sm:text-base">
+              Flame Retardant Low Smoke cables for enhanced safety in
+              residential buildings
+            </p>
+          </div>
+          <div class="bg-gray-50 p-4 sm:p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-3 text-red-600">FRLS-H Cables</h4>
+            <p class="text-gray-600 text-sm sm:text-base">
+              Flame Retardant Low Smoke Halogen Free cables for critical
+              applications
+            </p>
+          </div>
+          <div class="bg-gray-50 p-4 sm:p-6 rounded-xl">
+            <h4 class="font-bold text-lg mb-3 text-red-600">
+              300m & 200m Packs
+            </h4>
+            <p class="text-gray-600 text-sm sm:text-base">
+              Optimized packaging for project requirements with minimal wastage
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Multicore Cables Section -->
     <section id="multicore" class="cable-section py-12 sm:py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8 sm:mb-12">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    Multicore Round Cables
-                </h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">
-                    PVC Insulated & PVC Sheathed Industrial Flexible Cables (1100 Volts
-                    | IS 694:2010)
-                </p>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-6 sm:mb-8">
-                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">
-                    Available Configurations
-                </h3>
-                <div
-                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4"
-                >
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">2 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">3 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">4 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">5 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">7 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">8 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">10 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">12 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">14 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">16 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">19 Core</div>
-                    </div>
-                    <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
-                        <div class="text-red-600 font-bold text-base sm:text-xl">24 Core</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-                <!-- Sample Price Table for 2-5 Core -->
-                <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-                    <h4 class="text-lg sm:text-xl font-bold mb-4 text-gray-800">
-                        Price per 100 meters (2-5 Core)
-                    </h4>
-                    <div class="overflow-x-auto">
-                        <table class="w-full price-table">
-                            <thead>
-                                <tr>
-                                    <th>Size</th>
-                                    <th>2 Core</th>
-                                    <th>3 Core</th>
-                                    <th>4 Core</th>
-                                    <th>5 Core</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>0.75mm²</td>
-                                    <td>₹7,020</td>
-                                    <td>₹8,786</td>
-                                    <td>₹10,989</td>
-                                    <td>₹12,628</td>
-                                </tr>
-                                <tr>
-                                    <td>1.0mm²</td>
-                                    <td>₹8,515</td>
-                                    <td>₹11,015</td>
-                                    <td>₹13,946</td>
-                                    <td>₹16,377</td>
-                                </tr>
-                                <tr>
-                                    <td>1.5mm²</td>
-                                    <td>₹9,918</td>
-                                    <td>₹13,089</td>
-                                    <td>₹16,748</td>
-                                    <td>₹19,891</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5mm²</td>
-                                    <td>₹12,684</td>
-                                    <td>₹16,893</td>
-                                    <td>₹22,106</td>
-                                    <td>₹26,646</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Sample Price Table for 6-10 Core -->
-                <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-                    <h4 class="text-lg sm:text-xl font-bold mb-4 text-gray-800">
-                        Price per 100 meters (6-10 Core)
-                    </h4>
-                    <div class="overflow-x-auto">
-                        <table class="w-full price-table">
-                            <thead>
-                                <tr>
-                                    <th>Size</th>
-                                    <th>6 Core</th>
-                                    <th>7 Core</th>
-                                    <th>8 Core</th>
-                                    <th>10 Core</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>0.75mm²</td>
-                                    <td>₹14,756</td>
-                                    <td>₹16,371</td>
-                                    <td>₹18,555</td>
-                                    <td>₹22,749</td>
-                                </tr>
-                                <tr>
-                                    <td>1.0mm²</td>
-                                    <td>₹19,232</td>
-                                    <td>₹21,597</td>
-                                    <td>₹24,589</td>
-                                    <td>₹30,247</td>
-                                </tr>
-                                <tr>
-                                    <td>1.5mm²</td>
-                                    <td>₹23,672</td>
-                                    <td>₹26,444</td>
-                                    <td>₹29,938</td>
-                                    <td>₹37,261</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5mm²</td>
-                                    <td>₹31,055</td>
-                                    <td>₹35,350</td>
-                                    <td>₹40,501</td>
-                                    <td>₹51,118</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Multicore Round Cables
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            PVC Insulated & PVC Sheathed Industrial Flexible Cables (1100 Volts
+            | IS 694:2010)
+          </p>
         </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-6 sm:mb-8">
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">
+            Available Configurations
+          </h3>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4">
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                2 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                3 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                4 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                5 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                7 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                8 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                10 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                12 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                14 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                16 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                19 Core
+              </div>
+            </div>
+            <div class="bg-red-50 p-3 sm:p-4 rounded-lg text-center">
+              <div class="text-red-600 font-bold text-base sm:text-xl">
+                24 Core
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+          <!-- Sample Price Table for 2-5 Core -->
+          <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
+            <h4 class="text-lg sm:text-xl font-bold mb-4 text-gray-800">
+              Price per 100 meters (2-5 Core)
+            </h4>
+            <div class="overflow-x-auto">
+              <table class="w-full price-table">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>2 Core</th>
+                    <th>3 Core</th>
+                    <th>4 Core</th>
+                    <th>5 Core</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0.75mm²</td>
+                    <td>₹7,020</td>
+                    <td>₹8,786</td>
+                    <td>₹10,989</td>
+                    <td>₹12,628</td>
+                  </tr>
+                  <tr>
+                    <td>1.0mm²</td>
+                    <td>₹8,515</td>
+                    <td>₹11,015</td>
+                    <td>₹13,946</td>
+                    <td>₹16,377</td>
+                  </tr>
+                  <tr>
+                    <td>1.5mm²</td>
+                    <td>₹9,918</td>
+                    <td>₹13,089</td>
+                    <td>₹16,748</td>
+                    <td>₹19,891</td>
+                  </tr>
+                  <tr>
+                    <td>2.5mm²</td>
+                    <td>₹12,684</td>
+                    <td>₹16,893</td>
+                    <td>₹22,106</td>
+                    <td>₹26,646</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Sample Price Table for 6-10 Core -->
+          <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
+            <h4 class="text-lg sm:text-xl font-bold mb-4 text-gray-800">
+              Price per 100 meters (6-10 Core)
+            </h4>
+            <div class="overflow-x-auto">
+              <table class="w-full price-table">
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>6 Core</th>
+                    <th>7 Core</th>
+                    <th>8 Core</th>
+                    <th>10 Core</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0.75mm²</td>
+                    <td>₹14,756</td>
+                    <td>₹16,371</td>
+                    <td>₹18,555</td>
+                    <td>₹22,749</td>
+                  </tr>
+                  <tr>
+                    <td>1.0mm²</td>
+                    <td>₹19,232</td>
+                    <td>₹21,597</td>
+                    <td>₹24,589</td>
+                    <td>₹30,247</td>
+                  </tr>
+                  <tr>
+                    <td>1.5mm²</td>
+                    <td>₹23,672</td>
+                    <td>₹26,444</td>
+                    <td>₹29,938</td>
+                    <td>₹37,261</td>
+                  </tr>
+                  <tr>
+                    <td>2.5mm²</td>
+                    <td>₹31,055</td>
+                    <td>₹35,350</td>
+                    <td>₹40,501</td>
+                    <td>₹51,118</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Special Cables Section -->
     <section id="special" class="py-12 sm:py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8 sm:mb-12">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    Special Application Cables
-                </h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">
-                    Designed for specific industrial and commercial applications
-                </p>
-            </div>
-
-            <!-- Submersible Cables -->
-            <div
-                class="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-6 sm:mb-8 border border-gray-200"
-            >
-                <div class="flex flex-col sm:flex-row items-center mb-4 sm:mb-6">
-                    <div class="bg-red-100 p-3 rounded-lg mr-0 sm:mr-4 mb-3 sm:mb-0">
-                        <i class="fas fa-water text-red-600 text-xl sm:text-2xl"></i>
-                    </div>
-                    <div class="text-center sm:text-left">
-                        <h3 class="text-xl sm:text-2xl font-bold text-gray-800">
-                            Submersible Flat Cables
-                        </h3>
-                        <p class="text-gray-600 text-sm sm:text-base">
-                            Three Core PVC Insulated & Sheathed Cable for Submersible Pump
-                            Motors (1100 Volts)
-                        </p>
-                    </div>
-                </div>
-
-                <div class="overflow-x-auto">
-                    <table class="w-full price-table">
-                        <thead>
-                            <tr>
-                                <th>Conductor Size (sq.mm.)</th>
-                                <th>Price (₹/meter)</th>
-                                <th>Application</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1.5</td>
-                                <td>₹103.10</td>
-                                <td>Small Pumps</td>
-                            </tr>
-                            <tr>
-                                <td>2.5</td>
-                                <td>₹159.95</td>
-                                <td>Medium Pumps</td>
-                            </tr>
-                            <tr>
-                                <td>4.0</td>
-                                <td>₹239.35</td>
-                                <td>Industrial Pumps</td>
-                            </tr>
-                            <tr>
-                                <td>6.0</td>
-                                <td>₹354.30</td>
-                                <td>Large Pumps</td>
-                            </tr>
-                            <tr>
-                                <td>10.0</td>
-                                <td>₹615.95</td>
-                                <td>Heavy Duty Pumps</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Solar Cables -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200">
-                    <div class="flex flex-col sm:flex-row items-center mb-4 sm:mb-6">
-                        <div class="bg-yellow-100 p-3 rounded-lg mr-0 sm:mr-4 mb-3 sm:mb-0">
-                            <i class="fas fa-sun text-yellow-600 text-xl sm:text-2xl"></i>
-                        </div>
-                        <div class="text-center sm:text-left">
-                            <h3 class="text-xl sm:text-2xl font-bold text-gray-800">
-                                APM Solar Cables
-                            </h3>
-                            <p class="text-gray-600 text-sm sm:text-base">
-                                As per EN 50618 | UV Resistant | Zero Halogen
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="overflow-x-auto">
-                        <table class="w-full price-table">
-                            <thead>
-                                <tr>
-                                    <th>Size (sq.mm.)</th>
-                                    <th>Type</th>
-                                    <th>Price (₹/100m)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2.5</td>
-                                    <td>Cross-Linkable E-Beam</td>
-                                    <td>₹8,190</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Cross-Linkable E-Beam</td>
-                                    <td>₹11,750</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Cross-Linkable E-Beam</td>
-                                    <td>₹17,200</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>Cross-Linkable E-Beam</td>
-                                    <td>₹29,700</td>
-                                </tr>
-                                <tr>
-                                    <td>2.5</td>
-                                    <td>Flexible Tinned Copper</td>
-                                    <td>₹7,675</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Flexible Tinned Copper</td>
-                                    <td>₹11,100</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Flexible Tinned Copper</td>
-                                    <td>₹16,400</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Speaker Cables -->
-                <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200">
-                    <div class="flex flex-col sm:flex-row items-center mb-4 sm:mb-6">
-                        <div class="bg-blue-100 p-3 rounded-lg mr-0 sm:mr-4 mb-3 sm:mb-0">
-                            <i class="fas fa-volume-up text-blue-600 text-xl sm:text-2xl"></i>
-                        </div>
-                        <div class="text-center sm:text-left">
-                            <h3 class="text-xl sm:text-2xl font-bold text-gray-800">Speaker Cables</h3>
-                            <p class="text-gray-600 text-sm sm:text-base">
-                                High quality audio cables for professional applications
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="overflow-x-auto">
-                        <table class="w-full price-table">
-                            <thead>
-                                <tr>
-                                    <th>Item Type</th>
-                                    <th>Price (₹/100m)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2 × 0.5 sq.mm</td>
-                                    <td>₹2,560</td>
-                                </tr>
-                                <tr>
-                                    <td>2 × 0.75 sq.mm</td>
-                                    <td>₹3,816</td>
-                                </tr>
-                                <tr>
-                                    <td>2 × 1.0 sq.mm</td>
-                                    <td>₹4,805</td>
-                                </tr>
-                                <tr>
-                                    <td>2 × 1.5 sq.mm</td>
-                                    <td>₹6,920</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="mt-4 sm:mt-6 p-4 bg-gray-50 rounded-lg">
-                        <h4 class="font-bold mb-2 text-base sm:text-lg">Features:</h4>
-                        <ul class="text-gray-600 space-y-1 text-sm sm:text-base">
-                            <li>
-                                <i class="fas fa-check text-green-500 mr-2"></i> Oxygen-free
-                                copper conductors
-                            </li>
-                            <li>
-                                <i class="fas fa-check text-green-500 mr-2"></i> Transparent
-                                sound reproduction
-                            </li>
-                            <li>
-                                <i class="fas fa-check text-green-500 mr-2"></i> Flexible PVC
-                                insulation
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Special Application Cables
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Designed for specific industrial and commercial applications
+          </p>
         </div>
+
+        <!-- Submersible Cables -->
+        <div
+          class="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-6 sm:mb-8 border border-gray-200">
+          <div class="flex flex-col sm:flex-row items-center mb-4 sm:mb-6">
+            <div class="bg-red-100 p-3 rounded-lg mr-0 sm:mr-4 mb-3 sm:mb-0">
+              <i class="fas fa-water text-red-600 text-xl sm:text-2xl"></i>
+            </div>
+            <div class="text-center sm:text-left">
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-800">
+                Submersible Flat Cables
+              </h3>
+              <p class="text-gray-600 text-sm sm:text-base">
+                Three Core PVC Insulated & Sheathed Cable for Submersible Pump
+                Motors (1100 Volts)
+              </p>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full price-table">
+              <thead>
+                <tr>
+                  <th>Conductor Size (sq.mm.)</th>
+                  <th>Price (₹/meter)</th>
+                  <th>Application</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.5</td>
+                  <td>₹103.10</td>
+                  <td>Small Pumps</td>
+                </tr>
+                <tr>
+                  <td>2.5</td>
+                  <td>₹159.95</td>
+                  <td>Medium Pumps</td>
+                </tr>
+                <tr>
+                  <td>4.0</td>
+                  <td>₹239.35</td>
+                  <td>Industrial Pumps</td>
+                </tr>
+                <tr>
+                  <td>6.0</td>
+                  <td>₹354.30</td>
+                  <td>Large Pumps</td>
+                </tr>
+                <tr>
+                  <td>10.0</td>
+                  <td>₹615.95</td>
+                  <td>Heavy Duty Pumps</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Solar Cables -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+          <div
+            class="bg-white rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200">
+            <div class="flex flex-col sm:flex-row items-center mb-4 sm:mb-6">
+              <div
+                class="bg-yellow-100 p-3 rounded-lg mr-0 sm:mr-4 mb-3 sm:mb-0">
+                <i class="fas fa-sun text-yellow-600 text-xl sm:text-2xl"></i>
+              </div>
+              <div class="text-center sm:text-left">
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-800">
+                  APM Solar Cables
+                </h3>
+                <p class="text-gray-600 text-sm sm:text-base">
+                  As per EN 50618 | UV Resistant | Zero Halogen
+                </p>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="w-full price-table">
+                <thead>
+                  <tr>
+                    <th>Size (sq.mm.)</th>
+                    <th>Type</th>
+                    <th>Price (₹/100m)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2.5</td>
+                    <td>Cross-Linkable E-Beam</td>
+                    <td>₹8,190</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Cross-Linkable E-Beam</td>
+                    <td>₹11,750</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Cross-Linkable E-Beam</td>
+                    <td>₹17,200</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Cross-Linkable E-Beam</td>
+                    <td>₹29,700</td>
+                  </tr>
+                  <tr>
+                    <td>2.5</td>
+                    <td>Flexible Tinned Copper</td>
+                    <td>₹7,675</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Flexible Tinned Copper</td>
+                    <td>₹11,100</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Flexible Tinned Copper</td>
+                    <td>₹16,400</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Speaker Cables -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-4 sm:p-6 border border-gray-200">
+            <div class="flex flex-col sm:flex-row items-center mb-4 sm:mb-6">
+              <div class="bg-blue-100 p-3 rounded-lg mr-0 sm:mr-4 mb-3 sm:mb-0">
+                <i
+                  class="fas fa-volume-up text-blue-600 text-xl sm:text-2xl"></i>
+              </div>
+              <div class="text-center sm:text-left">
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-800">
+                  Speaker Cables
+                </h3>
+                <p class="text-gray-600 text-sm sm:text-base">
+                  High quality audio cables for professional applications
+                </p>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="w-full price-table">
+                <thead>
+                  <tr>
+                    <th>Item Type</th>
+                    <th>Price (₹/100m)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2 × 0.5 sq.mm</td>
+                    <td>₹2,560</td>
+                  </tr>
+                  <tr>
+                    <td>2 × 0.75 sq.mm</td>
+                    <td>₹3,816</td>
+                  </tr>
+                  <tr>
+                    <td>2 × 1.0 sq.mm</td>
+                    <td>₹4,805</td>
+                  </tr>
+                  <tr>
+                    <td>2 × 1.5 sq.mm</td>
+                    <td>₹6,920</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mt-4 sm:mt-6 p-4 bg-gray-50 rounded-lg">
+              <h4 class="font-bold mb-2 text-base sm:text-lg">Features:</h4>
+              <ul class="text-gray-600 space-y-1 text-sm sm:text-base">
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i> Oxygen-free
+                  copper conductors
+                </li>
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i> Transparent
+                  sound reproduction
+                </li>
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i> Flexible PVC
+                  insulation
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Shielded Cables Section -->
     <section id="shielded" class="cable-section py-12 sm:py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8 sm:mb-12">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    Shielded Cables
-                </h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">
-                    Flexible Stranded Bare Copper Conductor with Aluminium Mylar Tape
-                    Shield
-                </p>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
-                <div class="mb-4 sm:mb-6">
-                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">
-                        Specifications:
-                    </h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
-                        <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
-                            <div class="text-xs sm:text-sm text-gray-600 mb-1">Conductor</div>
-                            <div class="font-bold text-sm sm:text-base">Flexible Stranded Bare Copper</div>
-                        </div>
-                        <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
-                            <div class="text-xs sm:text-sm text-gray-600 mb-1">Shielding</div>
-                            <div class="font-bold text-sm sm:text-base">
-                                Aluminium Mylar Tape + ATC Drain Wire
-                            </div>
-                        </div>
-                        <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
-                            <div class="text-xs sm:text-sm text-gray-600 mb-1">Insulation</div>
-                            <div class="font-bold text-sm sm:text-base">PVC Insulated</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="overflow-x-auto">
-                    <table class="w-full price-table">
-                        <thead>
-                            <tr>
-                                <th>Cores</th>
-                                <th>0.50 mm²</th>
-                                <th>0.75 mm²</th>
-                                <th>1.0 mm²</th>
-                                <th>1.5 mm²</th>
-                                <th>2.5 mm²</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2 Core</td>
-                                <td>₹7,020</td>
-                                <td>₹8,515</td>
-                                <td>₹9,918</td>
-                                <td>₹12,684</td>
-                                <td>₹18,654</td>
-                            </tr>
-                            <tr>
-                                <td>3 Core</td>
-                                <td>₹8,786</td>
-                                <td>₹11,015</td>
-                                <td>₹13,089</td>
-                                <td>₹16,893</td>
-                                <td>₹25,929</td>
-                            </tr>
-                            <tr>
-                                <td>4 Core</td>
-                                <td>₹10,989</td>
-                                <td>₹13,946</td>
-                                <td>₹16,748</td>
-                                <td>₹22,106</td>
-                                <td>₹33,441</td>
-                            </tr>
-                            <tr>
-                                <td>5 Core</td>
-                                <td>₹12,628</td>
-                                <td>₹16,377</td>
-                                <td>₹19,891</td>
-                                <td>₹26,646</td>
-                                <td>₹41,531</td>
-                            </tr>
-                            <tr>
-                                <td>6 Core</td>
-                                <td>₹14,756</td>
-                                <td>₹19,232</td>
-                                <td>₹23,672</td>
-                                <td>₹31,055</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>7 Core</td>
-                                <td>₹16,371</td>
-                                <td>₹21,597</td>
-                                <td>₹26,444</td>
-                                <td>₹35,350</td>
-                                <td>₹54,415</td>
-                            </tr>
-                            <tr>
-                                <td>8 Core</td>
-                                <td>₹18,555</td>
-                                <td>₹24,589</td>
-                                <td>₹29,938</td>
-                                <td>₹40,501</td>
-                                <td>₹64,592</td>
-                            </tr>
-                            <tr>
-                                <td>10 Core</td>
-                                <td>₹22,749</td>
-                                <td>₹30,247</td>
-                                <td>₹37,261</td>
-                                <td>₹51,118</td>
-                                <td>₹80,104</td>
-                            </tr>
-                            <tr>
-                                <td>12 Core</td>
-                                <td>₹26,354</td>
-                                <td>₹35,368</td>
-                                <td>₹44,182</td>
-                                <td>₹59,715</td>
-                                <td>₹94,969</td>
-                            </tr>
-                            <tr>
-                                <td>14 Core</td>
-                                <td>₹30,008</td>
-                                <td>₹40,128</td>
-                                <td>₹50,850</td>
-                                <td>₹69,023</td>
-                                <td>₹111,305</td>
-                            </tr>
-                            <tr>
-                                <td>16 Core</td>
-                                <td>₹34,033</td>
-                                <td>₹46,611</td>
-                                <td>₹57,469</td>
-                                <td>₹78,249</td>
-                                <td>₹127,034</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-600">
-                    <p>
-                        <i class="fas fa-info-circle text-red-600 mr-2"></i> Prices are
-                        per 100 meters. All prices are exclusive of GST.
-                    </p>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 sm:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Shielded Cables
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Flexible Stranded Bare Copper Conductor with Aluminium Mylar Tape
+            Shield
+          </p>
         </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6">
+          <div class="mb-4 sm:mb-6">
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">
+              Specifications:
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
+              <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                <div class="text-xs sm:text-sm text-gray-600 mb-1">
+                  Conductor
+                </div>
+                <div class="font-bold text-sm sm:text-base">
+                  Flexible Stranded Bare Copper
+                </div>
+              </div>
+              <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                <div class="text-xs sm:text-sm text-gray-600 mb-1">
+                  Shielding
+                </div>
+                <div class="font-bold text-sm sm:text-base">
+                  Aluminium Mylar Tape + ATC Drain Wire
+                </div>
+              </div>
+              <div class="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                <div class="text-xs sm:text-sm text-gray-600 mb-1">
+                  Insulation
+                </div>
+                <div class="font-bold text-sm sm:text-base">PVC Insulated</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full price-table">
+              <thead>
+                <tr>
+                  <th>Cores</th>
+                  <th>0.50 mm²</th>
+                  <th>0.75 mm²</th>
+                  <th>1.0 mm²</th>
+                  <th>1.5 mm²</th>
+                  <th>2.5 mm²</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2 Core</td>
+                  <td>₹7,020</td>
+                  <td>₹8,515</td>
+                  <td>₹9,918</td>
+                  <td>₹12,684</td>
+                  <td>₹18,654</td>
+                </tr>
+                <tr>
+                  <td>3 Core</td>
+                  <td>₹8,786</td>
+                  <td>₹11,015</td>
+                  <td>₹13,089</td>
+                  <td>₹16,893</td>
+                  <td>₹25,929</td>
+                </tr>
+                <tr>
+                  <td>4 Core</td>
+                  <td>₹10,989</td>
+                  <td>₹13,946</td>
+                  <td>₹16,748</td>
+                  <td>₹22,106</td>
+                  <td>₹33,441</td>
+                </tr>
+                <tr>
+                  <td>5 Core</td>
+                  <td>₹12,628</td>
+                  <td>₹16,377</td>
+                  <td>₹19,891</td>
+                  <td>₹26,646</td>
+                  <td>₹41,531</td>
+                </tr>
+                <tr>
+                  <td>6 Core</td>
+                  <td>₹14,756</td>
+                  <td>₹19,232</td>
+                  <td>₹23,672</td>
+                  <td>₹31,055</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>7 Core</td>
+                  <td>₹16,371</td>
+                  <td>₹21,597</td>
+                  <td>₹26,444</td>
+                  <td>₹35,350</td>
+                  <td>₹54,415</td>
+                </tr>
+                <tr>
+                  <td>8 Core</td>
+                  <td>₹18,555</td>
+                  <td>₹24,589</td>
+                  <td>₹29,938</td>
+                  <td>₹40,501</td>
+                  <td>₹64,592</td>
+                </tr>
+                <tr>
+                  <td>10 Core</td>
+                  <td>₹22,749</td>
+                  <td>₹30,247</td>
+                  <td>₹37,261</td>
+                  <td>₹51,118</td>
+                  <td>₹80,104</td>
+                </tr>
+                <tr>
+                  <td>12 Core</td>
+                  <td>₹26,354</td>
+                  <td>₹35,368</td>
+                  <td>₹44,182</td>
+                  <td>₹59,715</td>
+                  <td>₹94,969</td>
+                </tr>
+                <tr>
+                  <td>14 Core</td>
+                  <td>₹30,008</td>
+                  <td>₹40,128</td>
+                  <td>₹50,850</td>
+                  <td>₹69,023</td>
+                  <td>₹111,305</td>
+                </tr>
+                <tr>
+                  <td>16 Core</td>
+                  <td>₹34,033</td>
+                  <td>₹46,611</td>
+                  <td>₹57,469</td>
+                  <td>₹78,249</td>
+                  <td>₹127,034</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-600">
+            <p>
+              <i class="fas fa-info-circle text-red-600 mr-2"></i> Prices are
+              per 100 meters. All prices are exclusive of GST.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Newsletter Section -->
     <section class="py-12 sm:py-16 bg-red-600 text-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Stay Updated</h2>
-                <p class="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90">
-                    Subscribe to our newsletter for the latest products, offers, and
-                    industry insights
-                </p>
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+            Stay Updated
+          </h2>
+          <p class="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90">
+            Subscribe to our newsletter for the latest products, offers, and
+            industry insights
+          </p>
 
-                <form
-                    id="newsletterForm"
-                    class="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-lg mx-auto"
-                >
-                    <input
-                        type="email"
-                        placeholder="Enter your email address"
-                        class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white text-sm sm:text-base"
-                    />
-                    <button
-                        type="submit"
-                        class="bg-white text-red-600 px-4 sm:px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm sm:text-base"
-                    >
-                        Subscribe
-                    </button>
-                </form>
-                <p class="mt-4 text-sm opacity-75">
-                    We respect your privacy. Unsubscribe at any time.
-                </p>
-            </div>
+          <form
+            id="newsletterForm"
+            class="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-lg mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white text-sm sm:text-base" />
+            <button
+              type="submit"
+              class="bg-white text-red-600 px-4 sm:px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm sm:text-base">
+              Subscribe
+            </button>
+          </form>
+          <p class="mt-4 text-sm opacity-75">
+            We respect your privacy. Unsubscribe at any time.
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Contact & Company Info -->
     <section id="contact" class="py-12 sm:py-16 bg-gray-900 text-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
+              APM Cables and Wires Pvt. Ltd.
+            </h3>
+            <div class="space-y-3 sm:space-y-4">
+              <div class="flex items-start">
+                <i class="fas fa-building mr-3 sm:mr-4 mt-1 text-red-400"></i>
                 <div>
-                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
-                        APM Cables and Wires Pvt. Ltd.
-                    </h3>
-                    <div class="space-y-3 sm:space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-building mr-3 sm:mr-4 mt-1 text-red-400"></i>
-                            <div>
-                                <div class="font-semibold text-sm sm:text-base">Marketing Office:</div>
-                                <div class="text-xs sm:text-sm">1/37, 3rd Floor, Tollygunge, Kolkata – 700040</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-phone mr-3 sm:mr-4 text-red-400"></i>
-                            <div class="text-xs sm:text-sm">080 45 77 1313</div>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fab fa-whatsapp mr-3 sm:mr-4 text-red-400"></i>
-                            <div class="text-xs sm:text-sm">9711773333</div>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope mr-3 sm:mr-4 text-red-400"></i>
-                            <div class="text-xs sm:text-sm">sales@apmcables.com</div>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 sm:mt-6">
-                        <h4 class="font-bold mb-3 text-sm sm:text-base">Follow Us</h4>
-                        <div class="flex space-x-3 sm:space-x-4">
-                            <a
-                                href="#"
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-red-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
-                            >
-                                <i class="fab fa-facebook-f text-sm"></i>
-                            </a>
-                            <a
-                                href="#"
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-red-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
-                            >
-                                <i class="fab fa-twitter text-sm"></i>
-                            </a>
-                            <a
-                                href="#"
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-red-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
-                            >
-                                <i class="fab fa-linkedin-in text-sm"></i>
-                            </a>
-                            <a
-                                href="#"
-                                class="w-8 h-8 sm:w-10 sm:h-10 bg-red-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
-                            >
-                                <i class="fab fa-instagram text-sm"></i>
-                            </a>
-                        </div>
-                    </div>
+                  <div class="font-semibold text-sm sm:text-base">
+                    Marketing Office:
+                  </div>
+                  <div class="text-xs sm:text-sm">
+                    1/37, 3rd Floor, Tollygunge, Kolkata – 700040
+                  </div>
                 </div>
-
-                <div>
-                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Quick Links</h3>
-                    <div class="grid grid-cols-2 gap-3 sm:gap-4">
-                        <div>
-                            <ul class="space-y-2">
-                                <li>
-                                    <a href="#pvc-wires" class="text-gray-300 hover:text-white text-xs sm:text-sm"
-                                        >PVC Wires</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#project-wires"
-                                        class="text-gray-300 hover:text-white text-xs sm:text-sm"
-                                        >Project Wires</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#multicore" class="text-gray-300 hover:text-white text-xs sm:text-sm"
-                                        >Multicore Cables</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#special" class="text-gray-300 hover:text-white text-xs sm:text-sm"
-                                        >Special Cables</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="space-y-2">
-                                <li>
-                                    <a href="#" class="text-gray-300 hover:text-white text-xs sm:text-sm"
-                                        >Download Catalog</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="text-gray-300 hover:text-white text-xs sm:text-sm"
-                                        >Technical Specifications</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="text-gray-300 hover:text-white text-xs sm:text-sm"
-                                        >Dealer Login</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Request Quote</h3>
-                    <form id="quoteForm" class="space-y-3 sm:space-y-4">
-                        <div>
-                            <input
-                                type="text"
-                                placeholder="Your Name"
-                                class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm sm:text-base"
-                            />
-                        </div>
-                        <div>
-                            <input
-                                type="email"
-                                placeholder="Email Address"
-                                class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm sm:text-base"
-                            />
-                        </div>
-                        <div>
-                            <input
-                                type="tel"
-                                placeholder="Phone Number"
-                                class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm sm:text-base"
-                            />
-                        </div>
-                        <div>
-                            <textarea
-                                placeholder="Product Requirements"
-                                rows="3"
-                                class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm sm:text-base"
-                            ></textarea>
-                        </div>
-                        <button
-                            type="submit"
-                            class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm sm:text-base"
-                        >
-                            Submit Quote Request
-                        </button>
-                    </form>
-                </div>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone mr-3 sm:mr-4 text-red-400"></i>
+                <div class="text-xs sm:text-sm">080 45 77 1313</div>
+              </div>
+              <div class="flex items-center">
+                <i class="fab fa-whatsapp mr-3 sm:mr-4 text-red-400"></i>
+                <div class="text-xs sm:text-sm">9711773333</div>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-envelope mr-3 sm:mr-4 text-red-400"></i>
+                <div class="text-xs sm:text-sm">sales@apmcables.com</div>
+              </div>
             </div>
 
-            <div class="border-t border-gray-700 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
-                <p class="text-gray-400 text-xs sm:text-sm">CIN: U46593RJ2024PTC094564</p>
-                <p class="text-gray-400 mt-2 text-xs sm:text-sm">
-                    Note: All prices are exclusive of GST as applicable. Prices valid as
-                    of 24 June 2025.
-                </p>
-                <p class="text-gray-400 mt-3 sm:mt-4 text-xs sm:text-sm">
-                    &copy; 2024 APM Cables and Wires Pvt. Ltd. All rights reserved.
-                </p>
+            <div class="mt-4 sm:mt-6">
+              <h4 class="font-bold mb-3 text-sm sm:text-base">Follow Us</h4>
+              <div class="flex space-x-3 sm:space-x-4">
+                <a
+                  href="#"
+                  class="w-8 h-8 sm:w-10 sm:h-10 bg-red-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <i class="fab fa-facebook-f text-sm"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 sm:w-10 sm:h-10 bg-red-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <i class="fab fa-twitter text-sm"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 sm:w-10 sm:h-10 bg-red-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <i class="fab fa-linkedin-in text-sm"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 sm:w-10 sm:h-10 bg-red-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <i class="fab fa-instagram text-sm"></i>
+                </a>
+              </div>
             </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
+              Quick Links
+            </h3>
+            <div class="grid grid-cols-2 gap-3 sm:gap-4">
+              <div>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#pvc-wires"
+                      class="text-gray-300 hover:text-white text-xs sm:text-sm"
+                      >PVC Wires</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#project-wires"
+                      class="text-gray-300 hover:text-white text-xs sm:text-sm"
+                      >Project Wires</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#multicore"
+                      class="text-gray-300 hover:text-white text-xs sm:text-sm"
+                      >Multicore Cables</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#special"
+                      class="text-gray-300 hover:text-white text-xs sm:text-sm"
+                      >Special Cables</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white text-xs sm:text-sm"
+                      >Download Catalog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white text-xs sm:text-sm"
+                      >Technical Specifications</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-300 hover:text-white text-xs sm:text-sm"
+                      >Dealer Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
+              Request Quote
+            </h3>
+            <form id="quoteForm" class="space-y-3 sm:space-y-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm sm:text-base" />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm sm:text-base" />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm sm:text-base" />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Product Requirements"
+                  rows="3"
+                  class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 text-sm sm:text-base"></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm sm:text-base">
+                Submit Quote Request
+              </button>
+            </form>
+          </div>
         </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
+          <p class="text-gray-400 text-xs sm:text-sm">
+            CIN: U46593RJ2024PTC094564
+          </p>
+          <p class="text-gray-400 mt-2 text-xs sm:text-sm">
+            Note: All prices are exclusive of GST as applicable. Prices valid as
+            of 24 June 2025.
+          </p>
+          <p class="text-gray-400 mt-3 sm:mt-4 text-xs sm:text-sm">
+            &copy; 2024 APM Cables and Wires Pvt. Ltd. All rights reserved.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Download Banner -->
     <div class="fixed bottom-4 right-4 z-50 sticky-cta max-w-xs sm:max-w-sm">
-        <div class="bg-red-600 text-white p-3 sm:p-4 rounded-xl shadow-2xl">
-            <div class="flex items-center">
-                <i class="fas fa-file-pdf text-xl sm:text-2xl mr-3"></i>
-                <div>
-                    <div class="font-bold text-sm sm:text-base">Price List Available</div>
-                    <div class="text-xs sm:text-sm opacity-90">Effective 24 June 2025</div>
-                </div>
+      <div class="bg-red-600 text-white p-3 sm:p-4 rounded-xl shadow-2xl">
+        <div class="flex items-center">
+          <i class="fas fa-file-pdf text-xl sm:text-2xl mr-3"></i>
+          <div>
+            <div class="font-bold text-sm sm:text-base">
+              Price List Available
             </div>
-            <a
-                href="#"
-                class="mt-2 sm:mt-3 block text-center bg-white text-red-600 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-xs sm:text-sm"
-            >
-                Download PDF Catalog
-            </a>
+            <div class="text-xs sm:text-sm opacity-90">
+              Effective 24 June 2025
+            </div>
+          </div>
         </div>
+        <a
+          href="#"
+          class="mt-2 sm:mt-3 block text-center bg-white text-red-600 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-xs sm:text-sm">
+          Download PDF Catalog
+        </a>
+      </div>
     </div>
 
     <!-- Scroll to Top Button -->
     <div id="scrollTop" class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </div>
 
     <script>
@@ -1558,28 +1647,34 @@
 
       mobileMenuBtn.addEventListener("click", function () {
         mobileMenu.classList.toggle("hidden");
-        if (mobileMenu.classList.contains('hidden')) {
-          menuIcon.classList.remove('fa-times');
-          menuIcon.classList.add('fa-bars');
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.classList.remove("fa-times");
+          menuIcon.classList.add("fa-bars");
         } else {
-          menuIcon.classList.remove('fa-bars');
-          menuIcon.classList.add('fa-times');
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-times");
         }
       });
 
       // Form submission
-      document.getElementById("quoteForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Thank you for your quote request! Our sales team will contact you within 24 hours.");
-        this.reset();
-      });
+      document
+        .getElementById("quoteForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Thank you for your quote request! Our sales team will contact you within 24 hours."
+          );
+          this.reset();
+        });
 
       // Newsletter Form submission
-      document.getElementById("newsletterForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Thank you for subscribing to our newsletter!");
-        this.reset();
-      });
+      document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for subscribing to our newsletter!");
+          this.reset();
+        });
 
       // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -1598,8 +1693,8 @@
             // Close mobile menu if open
             if (!mobileMenu.classList.contains("hidden")) {
               mobileMenu.classList.add("hidden");
-              menuIcon.classList.remove('fa-times');
-              menuIcon.classList.add('fa-bars');
+              menuIcon.classList.remove("fa-times");
+              menuIcon.classList.add("fa-bars");
             }
           }
         });
@@ -1664,6 +1759,5 @@
         });
       });
     </script>
-</body>
-
+  </body>
 </html>
